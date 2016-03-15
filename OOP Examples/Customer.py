@@ -2,7 +2,7 @@
 """
 Created on Tue Mar 15 16:13:45 2016
 
-@author: narf
+@author: Tim
 """
 
 class Customer:

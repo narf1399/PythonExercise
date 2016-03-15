@@ -12,8 +12,8 @@ class FootballPlayer:
 		self.club = club
 
 	def playerInformation(self):
-		print "My name is", self.name, "and I'm", self.age, "years old."
-		print "I'm", self.nationality, "and play for", self.club, "as number", self.number
+		print "My name is %s and I'm %d years old." % (self.name, self.age)
+		print "I'm %s and play for %s as number %d" % (self.nationality, self.club, self.number)
 
 	@abstractmethod
 	def playerAction(self):
