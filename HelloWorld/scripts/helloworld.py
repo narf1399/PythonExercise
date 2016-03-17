@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 
-import helloworld_module
+from hello_world_module.helloworld_module import *
 
 
 
 # Main method
 if __name__ == '__main__':
-    helloworld_module.printHelloWorld("Hey")
-    helloworld_module.printHelloWorld("Hola")
+    printHelloWorld("Hey")
+    printHelloWorld("Hola")
+    printWarning()
