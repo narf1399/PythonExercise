@@ -24,6 +24,6 @@ print y
 myList = []
 myList = y.as_matrix()
 
-print "\n", myList
+print "\n", myList.item(0).split()[0]
 
 
