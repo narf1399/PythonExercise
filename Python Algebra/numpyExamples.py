@@ -53,5 +53,44 @@ print "\n Here is a 4x4 matrix"
 myMatrix = numpy.zeros(16).reshape(4,4)
 print myMatrix
 
+# Generate a matrix of ones in 3x3 form
+print "\n Here is a 3x3 matrix consisting of ones"
+myMatrix = numpy.ones(9).reshape(3,3)
+print myMatrix, "\n"
 
+# Generate a matrix with random values [3,10) of size 3x2
+min = 3
+max = 10
+myMatrix = numpy.random.random(6).reshape(3,2) * (max - min) + min
+print "Here is a matrix with random elements in range of [3,10):"
+print myMatrix
+print "\n"
+
+# Matrix multiplicate
+matrixA = numpy.random.random(6).reshape(3,2) * (max - min) + min
+matrixB = numpy.random.random(8).reshape(2,4) * (max - min) + min
+print "Multiply matrix A with matrix B"
+print "Matrix A:\n", matrixA, "\n"
+print "Matrix B:\n", matrixB, "\n"
+print "A*B:\n", numpy.dot(matrixA, matrixB)
+
+print "Shape of matrix A:", matrixA.shape
+print "Number of rows:", matrixA.shape[0]
+
+# Generate a vector, first element = 0, last element = 2
+# no of elements = 20
+myVector = numpy.linspace(0,2,20,endpoint=True)[1:]
+print "\nA vector starting from 0, ending at 2 with 20 elements:"
+print myVector
+
+# Stack matrices, dimensions have to match
+print "\nStacking matrices:"
+A = numpy.matrix([[2,3,4],[3,5,6],[6,7,8]])
+B = numpy.matrix([[5,6,8],[3,5,46],[16,7,8]])
+print "A =\n", A
+print "B =\n", B
+C = numpy.vstack((A,B))
+print "C =\n", C
+D = numpy.hstack((A,B))
+print "D =\n", D
 
